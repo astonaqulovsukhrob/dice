@@ -11,8 +11,11 @@ body {
   color: #4ECCA3;
 }
 
-.container {
+.container, header {
+  width: 80%;
+  margin: auto; 
   text-align: center;
+  animation: iconanim 2s ease-in-out infinite alternate;  
 }
 
 h1 {
@@ -22,6 +25,7 @@ h1 {
 }
 
 h2 {
+  font-size: 35px;
   font-family: 'Indie Flower', cursive; 
 }
 
@@ -32,7 +36,7 @@ h2 {
 }
 
 .dice-img {
-  width: 70%;
+  width: 60%;
 }
 
 .btn {
@@ -40,6 +44,7 @@ h2 {
   margin: auto;
   border: none;
   margin-top: 25px;
+  outline: none;
 }
 
 .btn-grad {background-image: linear-gradient(to right, #C04848 0%, #480048  51%, #C04848  100%)}
@@ -107,4 +112,57 @@ footer {
   to {
     transform: translateX(-10px);
   }
+}
+
+@media (max-width: 765px) {
+
+  header {
+    animation: none;
+  }
+
+  .container {
+    animation: none;
+    align-items: center;
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 80vh;
+  }
+
+  .dice-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .dice-img {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @keyframes iconanim {
+    from {
+      transform: translateY(10px);
+    }
+  
+    to {
+      transform: translateY(-10px);
+    }
+  }
+ 
 }
