@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+body {
+  margin: 0;
+  background-color: #393E46;
+  color: #4ECCA3;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Indie Flower', cursive; 
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.dice-img {
+  width: 70%;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  border: none;
+  margin-top: 25px;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #C04848 0%, #480048  51%, #C04848  100%)}
+.btn-grad {
+  padding: 10px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px #eee;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.myinstagram, .mytelegram, .mygithub {
+  background-color: white;
+  height: 40px;
+  width: 40px;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.8s;
+  animation: iconanim 2s ease-in-out infinite alternate;
+}
+
+.myinstagram a {
+  color: brown;
+}
+
+.mygithub a {
+  color: #000;
+}
+
+.mytelegram a {
+  color: blue;
+}
+
+.myinstagram:hover, .mytelegram:hover, .mygithub:hover {
+  box-shadow: 0 0 10px 5px #fff;
+  background-color: #aaa;
+}
+
+@keyframes iconanim {
+  from {
+    transform: translateX(10px);
+  }
+
+  to {
+    transform: translateX(-10px);
+  }
+}
